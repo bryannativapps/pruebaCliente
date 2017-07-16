@@ -11,6 +11,9 @@ Vehicle.find_or_create_by(:id => 2, :license_plate => 'DFG321', :color => "blue"
 Passenger.find_or_create_by(:id => 1, :name => 'Bryan') #1
 Passenger.find_or_create_by(:id => 2, :name => 'Nativapps') #2
 
+Category.find_or_create_by(:id => 1, :name => 'ABC') #1
+Category.find_or_create_by(:id => 2, :name => 'DFG') #2
+
 Tour.find_or_create_by(:id => 1, :vehicle_id => 1, :passenger_id => 1, :from => "Barranquilla", :to => "Cartagena") #1
 Tour.find_or_create_by(:id => 2, :vehicle_id => 1, :passenger_id => 2, :from => "Barranquilla", :to => "Bogota") #2
 Tour.find_or_create_by(:id => 3, :vehicle_id => 2, :passenger_id => 1, :from => "Barranquilla", :to => "Cartagena") #3

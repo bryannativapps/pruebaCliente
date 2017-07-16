@@ -16,16 +16,22 @@ class ToursController < ApplicationController
 
   # GET /tours/new
   def new
+    @passengers = Passenger.all
+    @vehicles = Vehicle.all
     @tour = Tour.new
   end
 
   # GET /tours/1/edit
   def edit
+    @passengers = Passenger.all
+    @vehicles = Vehicle.all
   end
 
   # POST /tours
   # POST /tours.json
   def create
+    @passengers = Passenger.all
+    @vehicles = Vehicle.all
     @tour = Tour.new(tour_params)
     respond_to do |format|
       if @tour.save
@@ -41,6 +47,8 @@ class ToursController < ApplicationController
   # PATCH/PUT /tours/1
   # PATCH/PUT /tours/1.json
   def update
+    @passengers = Passenger.all
+    @vehicles = Vehicle.all
     respond_to do |format|
       if @tour.update(tour_params)
         format.html { redirect_to @tour, notice: 'Tour was successfully updated.' }
