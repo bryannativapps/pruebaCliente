@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Vehicle id:</strong>
+  <%= @tour.vehicle_id %>
+</p>
+
+<p>
+  <strong>Passenger id:</strong>
+  <%= @tour.passenger_id %>
+</p>
+
+<p>
+  <strong>From:</strong>
+  <%= @tour.from %>
+</p>
+
+<p>
+  <strong>To:</strong>
+  <%= @tour.to %>
+</p>
+
+<%= link_to 'Edit', edit_tour_path(@tour) %> |
+<%= link_to 'Back', tours_path %>
