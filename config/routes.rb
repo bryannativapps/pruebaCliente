@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root "tours#index"
   devise_for :users
   
   resources :tours
